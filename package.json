@@ -1,5 +1,5 @@
 {
-  "name": "nano-time",
+  "name": "nano-metric",
   "version": "0.0.2",
   "description": "a cli and programmable convert for metric-time",
   "main": "nano-time.js",

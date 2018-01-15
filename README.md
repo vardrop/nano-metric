@@ -1,4 +1,4 @@
-# nano-time
+# nano-metric
 
 A cli/module for [suzuki-yuki/metric-time](https://github.com/suzuki-yuki/metric-time)
 
@@ -8,17 +8,17 @@ This is how we roll:
 
 ### Installing
 
-`$ npm i <-g> nano-time` -g nur für Cli-Nutzung
+`$ npm i <-g> nano-metric` -g nur für Cli-Nutzung
 
 ## Usage
 
 ### Cli
 
-`$ node nano-time`
+`$ node nano-metric`
 
 ### Module
 ```javascript
-const time = require('./nano-time');
+const time = require('nano-metric');
 
 console.log(time(new Date()).kd + ' kd ' + time(new Date()).cd + ' cd');
 ```
