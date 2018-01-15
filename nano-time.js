@@ -7,7 +7,7 @@ if (require.main === module) {
 
 function convert(time) {
 	var kd = ((time - new Date("0000-01-01")) / 86400000000).toFixed(3);
-	var cd = ((time - new Date().setHours(0, 0, 0, 0)) / 864000).toFixed(3);
+	var cd = ((time - new Date(time).setHours(0, 0, 0, 0)) / 864000).toFixed(3);
 	return { kd, cd }
 }
 

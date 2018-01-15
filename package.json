@@ -26,8 +26,8 @@
     "mocha": "^4.1.0",
     "nano-scripts": "^0.1.3"
   },
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/vardrop/nano-time.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vardrop/nano-time.git"
   }
 }
