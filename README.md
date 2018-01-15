@@ -8,7 +8,7 @@ This is how we roll:
 
 ### Installing
 
-`$ npm i <-g> nano-metric` -g just for using cli
+`$ npm i [-g] nano-metric` -g just for using cli
 
 ## Usage
 
