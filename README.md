@@ -29,13 +29,13 @@ Should give you the output of https://suzuki-yuki.github.io/metric-time.
 ### self(date)
 
 Returns an object of the structure:
-```json
+```
 {
-	kd: '<kd>',
-	cd: '<cd>'
+  kd: '<kd>',
+  cd: '<cd>'
 }
 ```
-where kd is the time in kilodays and cd is the time in centidays.
+where <kd> is the time in kilodays and <cd> is the time in centidays.
 
 ## Tests
 
