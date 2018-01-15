@@ -20,7 +20,8 @@ This is how we roll:
 ```javascript
 const time = require('nano-metric');
 
-console.log(time(new Date()).kd + ' kd ' + time(new Date()).cd + ' cd');
+metric = time(new Date());
+console.log(metric.kd + ' kd ' + metric.cd + ' cd');
 ```
 Should give you the output of https://suzuki-yuki.github.io/metric-time.
 
