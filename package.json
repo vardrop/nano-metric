@@ -1,0 +1,29 @@
+{
+  "name": "nano-time",
+  "version": "0.0.1",
+  "description": "a cli and programmable convert for metric-time",
+  "main": "nano-time.js",
+  "files": [
+    "nano-time.js"
+  ],
+  "scripts": {
+    "test": "mocha test.js",
+    "cost": "node node_modules/nano-scripts/cost.js",
+    "license": "node node_modules/nano-scripts/license.js"
+  },
+  "keywords": [
+    "metric-time",
+    "nano-time",
+    "converter",
+    "cli",
+    "time"
+  ],
+  "author": "vardrop",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0",
+    "nano-scripts": "^0.1.3"
+  }
+}
