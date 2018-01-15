@@ -1,7 +1,7 @@
 var chai = require("chai");
 chai.should();
 
-const time = require('./nano-time');
+const time = require('./nano-metric');
 
 //Mon Jan 15 2018 23:38:19 GMT+0100
 it("testing kd convert", function() {
