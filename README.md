@@ -31,11 +31,11 @@ Should give you the output of https://suzuki-yuki.github.io/metric-time.
 Returns an object of the structure:
 ```
 {
-  kd: '<kd>',
-  cd: '<cd>'
+  kd: 'kd',
+  cd: 'cd'
 }
 ```
-where <kd> is the time in kilodays and <cd> is the time in centidays.
+where `'kd'` is the time in kilodays and `'cd'` is the time in centidays.
 
 ## Tests
 
