@@ -14,14 +14,17 @@ This is how we roll:
 
 ### Cli
 
-`$ node nano-metric`
+`$ node nano-metric [date]`
+If no date is supplied, the metric time now is printed.
 
 ### Module
 ```javascript
-const time = require('nano-metric');
+const time = require('./nano-metric');
 
-metric = time(new Date());
-console.log(metric.kd + ' kd ' + metric.cd + ' cd');
+while(true) {
+	metric = time(new Date());
+	process.stdout.write(metric.kd + ' kd ' + metric.cd + ' cd\r');
+}
 ```
 Should give you the output of https://suzuki-yuki.github.io/metric-time.
 
