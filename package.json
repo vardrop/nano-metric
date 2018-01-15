@@ -1,6 +1,6 @@
 {
   "name": "nano-metric",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "a cli and programmable convert for metric-time",
   "main": "nano-metric.js",
   "files": [
