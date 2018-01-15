@@ -2,9 +2,9 @@
   "name": "nano-metric",
   "version": "0.0.3",
   "description": "a cli and programmable convert for metric-time",
-  "main": "nano-time.js",
+  "main": "nano-metric.js",
   "files": [
-    "nano-time.js"
+    "nano-metric.js"
   ],
   "scripts": {
     "test": "mocha test.js",
