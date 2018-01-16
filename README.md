@@ -4,6 +4,9 @@ A cli/module for [suzuki-yuki/metric-time](https://github.com/suzuki-yuki/metric
 
 ## Getting Started
 
+d-values, such as `kdd` and `cdd` are values (i.e. numbers) 
+wheras values, such as `kd` and `cd` are identifiers.
+
 This is how we roll:
 
 ### Installing
@@ -14,8 +17,9 @@ This is how we roll:
 
 ### Cli
 
-`$ node nano-metric [date]`
-If no date is supplied, the metric time now is printed.
+`$ node nano-metric [date]|[kdd cdd]`
+If no date is supplied, the metric time now is printed (forward conversion or simple conversion).
+If `kdd` and `cdd` values are supplied, the iso time of these values is printed (backwards conversion).
 
 ### Module
 ```javascript
@@ -32,14 +36,32 @@ Should give you the output of https://suzuki-yuki.github.io/metric-time.
 
 ### self(date)
 
-Returns an object of the structure:
+Returns an object (nano-metric-object) of the structure:
 ```
 {
-  kd: 'kd',
-  cd: 'cd'
+  kd: kdd,
+  cd: cdd
 }
 ```
-where `'kd'` is the time in kilodays and `'cd'` is the time in centidays.
+where `kdd` is the time in kilodays and `cdd` is the time in centidays.
+
+### self(kd, cd)
+
+Takes `kdd` and `cdd` values as input and
+returns a Date()-object from `kdd` and `cdd` values.
+
+### self({kd: kdd, cd: cdd})
+
+Order of `kd: kdd` and `cd; cdd` does NOT matter.
+Takes an nano-metric-object as input and
+returns a Date()-object from nano-metric-object.
+Better usability and preferred over `self({kdd, cdd})`.
+
+### self({kdd, cdd})
+
+Order of `kdd` and `cdd` DOES matter.
+Takes an sorted objected as input and
+returns a Date()-object from sorted object.
 
 ## Tests
 
