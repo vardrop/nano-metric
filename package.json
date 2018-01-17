@@ -7,7 +7,7 @@
     "nano-metric.js"
   ],
   "bin": {
-    "nano-metric": "node nano-metric.js"
+    "nano-metric": "nano-metric.js"
   },
   "scripts": {
     "test": "mocha test.js",
