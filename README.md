@@ -26,8 +26,8 @@ If `kdd` and `cdd` values are supplied, the iso time of these values is printed 
 const time = require('./nano-metric');
 
 while(true) {
-	metric = time(new Date());
-	process.stdout.write(metric.kd + ' kd ' + metric.cd + ' cd\r');
+  metric = time(new Date());
+  process.stdout.write(metric.kd + ' kd ' + metric.cd + ' cd\r');
 }
 ```
 Should give you the output of https://suzuki-yuki.github.io/metric-time.
@@ -45,7 +45,7 @@ Returns an object (nano-metric-object) of the structure:
 ```
 where `kdd` is the time in kilodays and `cdd` is the time in centidays.
 
-### self(kd, cd)
+### self(kdd, cdd)
 
 Takes `kdd` and `cdd` values as input and
 returns a Date()-object from `kdd` and `cdd` values.
