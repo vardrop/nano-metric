@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var args = process.argv.slice(2);
 var date = (args.length == 1) ? new Date(args[0]) : new Date();
 var tzoffset = (new Date()).getTimezoneOffset() * 60000; //offset in milliseconds
