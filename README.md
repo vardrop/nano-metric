@@ -23,7 +23,7 @@ If `kdd` and `cdd` values are supplied, the iso time of these values is printed 
 
 ### Module
 ```javascript
-const time = require('./nano-metric');
+const time = require('nano-metric');
 
 while(true) {
   metric = time(new Date());
