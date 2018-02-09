@@ -11,8 +11,8 @@
   },
   "scripts": {
     "test": "mocha test.js",
-    "cost": "node node_modules/nano-scripts/cost.js",
-    "license": "node node_modules/nano-scripts/license.js"
+    "cost": "cost-of-modules --no-install",
+    "license": "license-checker-cli"
   },
   "keywords": [
     "metric-time",
@@ -23,11 +23,11 @@
   ],
   "author": "vardrop",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
-    "mocha": "^4.1.0",
-    "nano-scripts": "^0.1.3"
+    "cost-of-modules": "^1.0.1",
+    "license-checker-cli": "^1.0.0",
+    "mocha": "^4.1.0"
   },
   "repository": {
     "type": "git",
